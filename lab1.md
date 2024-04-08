@@ -1,5 +1,6 @@
 Command: cd
 1. No arguments
+
 ```
 Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
@@ -7,6 +8,7 @@ Andres-MacBook-Air:lecture1 AndreGiske$ cd
 Andres-MacBook-Air:~ AndreGiske$ pwd
 /Users/AndreGiske
 ```
+
 With no arguments, cd brought me to my own user directory called AndreGiske. The previous working directory was /Users/AndreGiske/Desktop/lecture1. New directory is /Users/AndreGiske
 This is because cd is used to change into different directories, but with no arguments it changes to the users directory.
 The output is not an error.
