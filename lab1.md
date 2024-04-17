@@ -9,8 +9,8 @@ Andres-MacBook-Air:lecture1 AndreGiske$ cd
 Andres-MacBook-Air:~ AndreGiske$ pwd
 /Users/AndreGiske
 ```
-With no arguments, cd brought me to my own user directory called AndreGiske. The previous working directory was ```/Users/AndreGiske/Desktop/lecture1```. New directory is ```/Users/AndreGiske```.
-This is because cd is used to change into different directories, but with no arguments it changes to the users directory.
+With no arguments, cd brought me to my own user directory called ```/AndreGiske```. The previous working directory was ```/Users/AndreGiske/Desktop/lecture1```. New directory is ```/Users/AndreGiske```.
+This is because ```cd``` is used to change into different directories, but with no arguments it changes to the users directory.
 The output is not an error.
 
 2. Directory argument
@@ -21,7 +21,7 @@ Andres-MacBook-Air:~ AndreGiske$ cd Desktop
 Andres-MacBook-Air:Desktop AndreGiske$ pwd
 /Users/AndreGiske/Desktop
 ```
-With the directory called Desktop as an argument, it brought me to the directory called Desktop. The previous working directory was ```/Users/AndreGiske```. New directory is ```/Users/AndreGiske/Desktop```.
+With the directory called ```/Desktop``` as an argument, it brought me to the directory called ```/Desktop```. The previous working directory was ```/Users/AndreGiske```. New directory is ```/Users/AndreGiske/Desktop```.
 This is because using a directory as an argument will change the directory into the given argument.
 The output is not an error.
 
@@ -34,9 +34,9 @@ bash: cd: Hello.java: Not a directory
 Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
 ```
-With the file called Hello.java as an argument, it could not complete this command and tells me that Hello.java is not a directory. The previous working directory was ```/Users/AndreGiske/Desktop/lecture1```. New directory is the same.
-This is because cd only works with directories, not files.
-The output is not an error.
+With the file called ```Hello.java``` as an argument, it could not complete this command and tells me that Hello.java is not a directory. The previous working directory was ```/Users/AndreGiske/Desktop/lecture1```. New directory is the same.
+This is because ```cd``` only works with directories, not files.
+The output is an error.
 
 ```
 Command: ls
@@ -50,8 +50,8 @@ Hello.class     Hello.java      README          messages
 Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
 ```
-With no arguments, ls showed all the files in my current working directory. The previous directory was ```/Users/AndreGiske/Desktop/lecture1```. New directory is the same.
-This is because the ls command shows all files in the current working directory.
+With no arguments, ```ls``` showed all the files in my current working directory. The previous directory was ```/Users/AndreGiske/Desktop/lecture1```. New directory is the same.
+This is because the ```ls``` command shows all files in the current working directory.
 The output is not an error.
 
 2. Directory argument
@@ -68,8 +68,8 @@ CSE 8B                                          lecture1
 Andres-MacBook-Air:~ AndreGiske$ pwd
 /Users/AndreGiske
 ```
-With Desktop as an argument, ls showed all the file names in the Desktop directory. The previous directory was ```/Users/AndreGiske``` New directory is the same.
-This is because the ls command can show files in the given input directory.
+With ```Desktop``` as an argument, ```ls``` showed all the file names in the ```Desktop``` directory. The previous directory was ```/Users/AndreGiske``` New directory is the same.
+This is because the ```ls``` command can show files in the given input directory.
 The output is not an error.
 
 3. File argument
@@ -81,8 +81,8 @@ Hello.java
 Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
 ```
-With Hello.java as an argument, ls printed Hello.java again. The previous directory was ```/Users/AndreGiske/Desktop/lecture1``` New directory is the same.
-This is because there are no further files in the Hello.java file, therefore it prints out the same file name.
+With ```Hello.java``` as an argument, ```ls``` printed ```Hello.java``` again. The previous directory was ```/Users/AndreGiske/Desktop/lecture1``` New directory is the same.
+This is because there are no further files in the ```Hello.java``` file, therefore it prints out the same file name.
 The output is not an error.
 
 ```
@@ -109,9 +109,9 @@ cat: lecture1: Is a directory
 Andres-MacBook-Air:Desktop AndreGiske$ pwd
 /Users/AndreGiske/Desktop
 ```
-With lecture1 as the directory argument, it does not complete the command and tells me that lecture1 is a directory. The previous directory was ```/Users/AndreGiske/Desktop```. New directory is the same.
-This is because the command cat does not work on directories, only files, therefore there is an error.
-The output is not an error.
+With ```lecture1``` as the directory argument, it does not complete the command and tells me that ```lecture1``` is a directory. The previous directory was ```/Users/AndreGiske/Desktop```. New directory is the same.
+This is because the command ```cat``` does not work on directories, only files.
+The output is an error.
 
 3. File argument
 ```
@@ -131,6 +131,6 @@ public class Hello {
 }Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
 ```
-With Hello.java as the file argument, it reads all the files contents. The previous directory was ```/Users/AndreGiske/Desktop/lecture1```. The new directory is the same.
-This is because cat command reads the contents of a file you input.
+With ```Hello.java``` as the file argument, it reads all the files contents. The previous directory was ```/Users/AndreGiske/Desktop/lecture1```. The new directory is the same.
+This is because ```cat``` command reads the contents of a file you input.
 The output is not an error.
