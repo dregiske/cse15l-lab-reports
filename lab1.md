@@ -114,6 +114,7 @@ This is because the command ```cat``` does not work on directories, only files.
 The output is an error.
 
 3. File argument
+
 ```
 Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
@@ -131,6 +132,7 @@ public class Hello {
 }Andres-MacBook-Air:lecture1 AndreGiske$ pwd
 /Users/AndreGiske/Desktop/lecture1
 ```
+
 With ```Hello.java``` as the file argument, it reads all the files contents. The previous directory was ```/Users/AndreGiske/Desktop/lecture1```. The new directory is the same.
 This is because ```cat``` command reads the contents of a file you input.
 The output is not an error.
