@@ -39,3 +39,7 @@ class ChatServer{
     }
 }
 ```
+Screenshot 1:
+-We call the class ```ChatServer``` with the ```main``` method which starts a new server with the given port number and then uses the class ```Handler``` which contains the method ```handleRequest``` which is the second method being called.
+-For the ```main``` method it takes the ```args[0]``` which should be a number between 1024 and 49151 to create the new remote server, in this case 4000. And the method ```handleRequest``` uses the URL as ```args```, more specifically the query of the URL to execute the method. In this case, ```/add-message?s=Hello&user=Dre```. ```handleRequest``` uses ```messages``` class field as well.
+-The revelant field ```messages``` gets changed from the method ```handleRequest``` by spilting the argument into parts and strategically adding these parts into the field ```messages```. Initially, ```messages``` was an empty string, which is then filled with ```Dre: Hello```.
