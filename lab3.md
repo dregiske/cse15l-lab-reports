@@ -1,0 +1,54 @@
+1. A failure-inducing input for the buggy program:
+
+```
+public class ArrayTests {
+  @Test
+  public void failureInducingTest(){
+    int[] input1 = {1, 2, 3};
+    ArrayExamples.reversed(input1);
+    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+  }
+}
+```
+
+2. An input that doesn't induce a failure:
+```
+public class ArrayTests {
+  @Test
+  public void nonFailureInducingTest(){
+    int[] input1 = {0};
+    ArrayExamples.reversed(input1);
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
+  }
+}
+```
+
+3. The symptom, as the output of running the two tests above:
+![Screen Shot 2024-05-06 at 8 06 52 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/9691da68-e614-40f6-82bd-054c23929c58)
+
+4. The bug, as the before-and-after:
+Before
+```
+public class ArrayExamples {
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+}
+```
+After
+```
+public class ArrayExamples {
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+}
+```
+5. Briefly describe (2-3 sentences) why the fix addresses the issue.
