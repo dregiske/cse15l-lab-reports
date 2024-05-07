@@ -27,6 +27,7 @@ public class ArrayTests {
 ![Screen Shot 2024-05-06 at 8 06 52 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/9691da68-e614-40f6-82bd-054c23929c58)
 
 4. The bug, as the before-and-after:
+
 Before
 ```
 public class ArrayExamples {
@@ -51,4 +52,5 @@ public class ArrayExamples {
   }
 }
 ```
-5. Briefly describe (2-3 sentences) why the fix addresses the issue.
+5. Why the fix addresses the issue:
+Before the ```reversed``` method was changed, it iterates through array ```arr``` and then at the end replaces the elements of array ```arr``` with the elements of array ```newArray```. However, ```newArray``` is still an empty array so it replaces ```arr``` elements with ```0```. So by changing the bottom lines of code to replace the elements of ```newArray``` instead of ```arr``` it runs the method properly.
