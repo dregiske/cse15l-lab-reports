@@ -62,7 +62,22 @@ Before the ```reversed``` method was changed, it iterates through array ```arr``
 
 PART 2
 
-```grep -c "a" text1.txt```
+grep -c on files:
+```
+Andres-MacBook-Air:docsearch-main AndreGiske$ grep -c "is" ./technical/biomed/1471-2253-2-5.txt
+272
+```
+The output is 272 because -c counts how many lines contain the pattern in a given file. In this case, 272 lines in the file ```1471-2253-2-5.txt``` have the word "is" somewhere in it.
+
+grep -c on directories:
+```
+Andres-MacBook-Air:docsearch-main AndreGiske$ grep -c "is" ./technical/biomed/
+grep: ./technical/biomed/: Is a directory
+```
+The command ```grep -c``` does not work on directories because they don't hold text and words like files do.
+
 ```grep -l /Desktop```
+
 ```grep -i "word" text1.txt``` insensitive - will match to the pattern no matter the capitalization
+
 ```grep -w "word" text1.txt``` sensitive - will match only directly equivalent words
