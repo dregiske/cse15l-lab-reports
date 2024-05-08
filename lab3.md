@@ -92,7 +92,7 @@ Andres-MacBook-Air:docsearch-main AndreGiske$ grep -l "permission" ./technical/b
 ./technical/biomed/1477-7525-1-10.txt
 ./technical/biomed/ar750.txt
 ```
-The output is a list of different file names because the command ```grep -l``` returns all the file names that contain the given pattern. In this case all the ```.txt``` files listed in the output all contain the word "permission" in them. This could be useful for
+The output is a list of different file names because the command ```grep -l``` returns all the file names that contain the given pattern. In this case all the ```.txt``` files listed in the output all contain the word "permission" in them. This could be useful for grouping files on categories like author names, dates, article titles, etc.
 
 4. ```grep -l``` on directories:
 
@@ -112,7 +112,7 @@ Five independent Salt Lake organizations that provide legal
 Community Legal Center hosted by staff members of the five
 building and not paying rent times five will save the non-profit
 ```
-The output returns any sentence that contains the pattern. This command is insensitive so it will match the pattern with the same word no matter the capitalization. In this case, it returned 3 sentences from the file, ```5_Legal_Groups.txt``` that all contain the word "five", including "Five".
+The output returns any sentence that contains the pattern. This command is insensitive so it will match the pattern with the same word no matter the capitalization. In this case, it returned 3 sentences from the file, ```5_Legal_Groups.txt``` that all contain the word "five", including "Five". This could be useful for quick searching information based on a word and finding exact sentences with context.
 
 6. ```grep -i``` on directories:
 
@@ -130,7 +130,7 @@ roups.txt
 Community Legal Center hosted by staff members of the five
 building and not paying rent times five will save the non-profit
 ```
-The output returns an sentence that has a perfect match of the pattern. Unlikes ```grep -i```, ```-w``` is sensitive so it will match only directly equivalent words, capitalization matters. The output is only 2 sentences now that contain the pattern "five" from the file ```5_Legal_Groups.txt```.
+The output returns an sentence that has a perfect match of the pattern. Unlike ```grep -i```, ```-w``` is sensitive so it will match only directly equivalent words, capitalization matters. The output is only 2 sentences now that contain the pattern "five" from the file ```5_Legal_Groups.txt```. This could be useful for quick searching like the previous command but with more strict parameters since it only outputs exact matches.
 
 8. ```grep -w``` on directories:
 
@@ -139,3 +139,6 @@ Andres-MacBook-Air:docsearch-main AndreGiske$ grep -w "five" ./technical/governm
 grep: ./technical/government/Media/: Is a directory
 ```
 The command ```grep -w``` does not work on directories which is why it returns an error statement.
+
+SOURCES:
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
