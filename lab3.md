@@ -68,7 +68,7 @@ PART 2
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -c "is" ./technical/biomed/1471-2253-2-5.txt
 272
 ```
-The output is a number because ```-c``` counts how many lines contain the pattern in a given file. In this case, 272 lines in the file ```1471-2253-2-5.txt``` have the word "is" somewhere in it.
+The output is a number because ```-c``` counts how many lines contain the pattern in a given file. In this case, 272 lines in the file ```1471-2253-2-5.txt``` have the word "is" somewhere in it. This could be useful for checking uniqueness of a file, or checking its contents by giving it a more niche pattern. For instance when looking for a text file about plasma would surely have many lines with the word "plasma" in it, if the file outputs a low number it probably is not the file we are looking for.
 
 2. ```grep -c``` on directories:
 
@@ -92,7 +92,7 @@ Andres-MacBook-Air:docsearch-main AndreGiske$ grep -l "permission" ./technical/b
 ./technical/biomed/1477-7525-1-10.txt
 ./technical/biomed/ar750.txt
 ```
-The output is a list of different file names because the command ```grep -l``` returns all the file names that contain the given pattern. In this case all the ```.txt``` files listed in the output all contain the word "permission" in them.
+The output is a list of different file names because the command ```grep -l``` returns all the file names that contain the given pattern. In this case all the ```.txt``` files listed in the output all contain the word "permission" in them. This could be useful for
 
 4. ```grep -l``` on directories:
 
@@ -112,7 +112,7 @@ Five independent Salt Lake organizations that provide legal
 Community Legal Center hosted by staff members of the five
 building and not paying rent times five will save the non-profit
 ```
-The output returns any sentence that contains the pattern. This command is insensitive so it will match the pattern with the same word no matter the capitalization. In this case, it returned 3 sentences from the file, ```5_Legal_Groups.txt``` that all contain the word five, even Five was counted as a match.
+The output returns any sentence that contains the pattern. This command is insensitive so it will match the pattern with the same word no matter the capitalization. In this case, it returned 3 sentences from the file, ```5_Legal_Groups.txt``` that all contain the word "five", including "Five".
 
 6. ```grep -i``` on directories:
 
