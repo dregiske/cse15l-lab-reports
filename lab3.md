@@ -142,3 +142,5 @@ The command ```grep -w``` does not work on directories which is why it returns a
 
 SOURCES:
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+
+Question for grader, for part 1 section 3, do i need to include a repository png link or is the copy pasted photo okay?
