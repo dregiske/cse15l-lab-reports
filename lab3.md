@@ -1,3 +1,5 @@
+PART 1
+
 1. A failure-inducing input for the buggy program:
 
 ```
@@ -12,6 +14,7 @@ public class ArrayTests {
 ```
 
 2. An input that doesn't induce a failure:
+
 ```
 public class ArrayTests {
   @Test
@@ -52,5 +55,14 @@ public class ArrayExamples {
   }
 }
 ```
+
 5. Why the fix addresses the issue:
-Before the ```reversed``` method was changed, it iterates through array ```arr``` and then at the end replaces the elements of array ```arr``` with the elements of array ```newArray```. However, ```newArray``` is still an empty array so it replaces ```arr``` elements with ```0```. So by changing the bottom lines of code to replace the elements of ```newArray``` instead of ```arr``` it runs the method properly.
+
+Before the ```reversed``` method was changed, it iterates through array ```arr``` and then at the end replaces the elements of ```arr``` with the elements of array ```newArray```. However, ```newArray``` is still an empty array so it replaces ```arr``` elements with ```0```. So by changing the bottom lines of code to replace the elements of ```newArray``` instead of ```arr``` it runs the method properly.
+
+PART 2
+
+```grep -c "a" text1.txt```
+```grep -l /Desktop```
+```grep -i "word" text1.txt``` insensitive - will match to the pattern no matter the capitalization
+```grep -w "word" text1.txt``` sensitive - will match only directly equivalent words
