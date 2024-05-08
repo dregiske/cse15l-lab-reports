@@ -1,6 +1,6 @@
 PART 1
 
-1. A failure-inducing input for the buggy program:
+1 A failure-inducing input for the buggy program:
 
 ```
 public class ArrayTests {
@@ -13,7 +13,7 @@ public class ArrayTests {
 }
 ```
 
-2. An input that doesn't induce a failure:
+2 An input that doesn't induce a failure:
 
 ```
 public class ArrayTests {
@@ -26,10 +26,10 @@ public class ArrayTests {
 }
 ```
 
-3. The symptom, as the output of running the two tests above:
+3 The symptom, as the output of running the two tests above:
 ![Screen Shot 2024-05-06 at 8 06 52 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/9691da68-e614-40f6-82bd-054c23929c58)
 
-4. The bug, as the before-and-after:
+4 The bug, as the before-and-after:
 
 Before
 ```
@@ -56,13 +56,13 @@ public class ArrayExamples {
 }
 ```
 
-5. Why the fix addresses the issue:
+5 Why the fix addresses the issue:
 
 Before the ```reversed``` method was changed, it iterates through array ```arr``` and then at the end replaces the elements of ```arr``` with the elements of array ```newArray```. However, ```newArray``` is still an empty array so it replaces ```arr``` elements with ```0```. So by changing the bottom lines of code to replace the elements of ```newArray``` instead of ```arr``` it runs the method properly.
 
 PART 2
 
-1. ```grep -c``` on files:
+1 ```grep -c``` on files:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -c "is" ./technical/biomed/1471-2253-2-5.txt
@@ -70,7 +70,7 @@ Andres-MacBook-Air:docsearch-main AndreGiske$ grep -c "is" ./technical/biomed/14
 ```
 The output is a number because ```-c``` counts how many lines contain the pattern in a given file. In this case, 272 lines in the file ```1471-2253-2-5.txt``` have the word "is" somewhere in it. This could be useful for checking uniqueness of a file, or checking its contents by giving it a more niche pattern. For instance when looking for a text file about plasma would surely have many lines with the word "plasma" in it, if the file outputs a low number it probably is not the file we are looking for.
 
-2. ```grep -c``` on directories:
+2 ```grep -c``` on directories:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -c "is" ./technical/biomed/
@@ -78,7 +78,7 @@ grep: ./technical/biomed/: Is a directory
 ```
 The command ```grep -c``` does not work on directories because they don't hold text and words like files do.
 
-3. ```grep -l``` on files:
+3 ```grep -l``` on files:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -l "permission" ./technical/biomed/*.txt
@@ -94,7 +94,7 @@ Andres-MacBook-Air:docsearch-main AndreGiske$ grep -l "permission" ./technical/b
 ```
 The output is a list of different file names because the command ```grep -l``` returns all the file names that contain the given pattern. In this case all the ```.txt``` files listed in the output all contain the word "permission" in them. This could be useful for grouping files on categories like author names, dates, article titles, etc.
 
-4. ```grep -l``` on directories:
+4 ```grep -l``` on directories:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -l "permission" ./technical/biomed/
@@ -103,7 +103,7 @@ grep: ./technical/biomed/: Is a directory
 The command ```grep -l``` does not work on directories that is why it returns an error.
 
 
-5. ```grep -i``` on files:
+5 ```grep -i``` on files:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -i "five" ./technical/government/Media/5_Legal_G
@@ -114,7 +114,7 @@ building and not paying rent times five will save the non-profit
 ```
 The output returns any sentence that contains the pattern. This command is insensitive so it will match the pattern with the same word no matter the capitalization. In this case, it returned 3 sentences from the file, ```5_Legal_Groups.txt``` that all contain the word "five", including "Five". This could be useful for quick searching information based on a word and finding exact sentences with context.
 
-6. ```grep -i``` on directories:
+6 ```grep -i``` on directories:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -i "five" ./technical/government/Media/
@@ -122,7 +122,7 @@ grep: ./technical/government/Media/: Is a directory
 ```
 The command ```grep -i``` does not work on directories that is why it returned an error statement.
 
-7. ```grep -w``` on files:
+7 ```grep -w``` on files:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -w "five" ./technical/government/Media/5_Legal_G
@@ -132,7 +132,7 @@ building and not paying rent times five will save the non-profit
 ```
 The output returns an sentence that has a perfect match of the pattern. Unlike ```grep -i```, ```-w``` is sensitive so it will match only directly equivalent words, capitalization matters. The output is only 2 sentences now that contain the pattern "five" from the file ```5_Legal_Groups.txt```. This could be useful for quick searching like the previous command but with more strict parameters since it only outputs exact matches.
 
-8. ```grep -w``` on directories:
+8 ```grep -w``` on directories:
 
 ```
 Andres-MacBook-Air:docsearch-main AndreGiske$ grep -w "five" ./technical/government/Media/
@@ -140,7 +140,9 @@ grep: ./technical/government/Media/: Is a directory
 ```
 The command ```grep -w``` does not work on directories which is why it returns an error statement.
 
-SOURCES:
+SOURCE:
 https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+
+
 
 Question for grader, for part 1 section 3, do i need to include a repository png link or is the copy pasted photo okay?
