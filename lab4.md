@@ -10,11 +10,12 @@ Step 5:
 
 ![Screen Shot 2024-05-22 at 2 38 52 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/a47961eb-23ca-4172-b7c1-9b3a6acd3141)
 
-Keys pressed: In the browser I `<ctrl + c>` the ssh url, then clicked my VS code open and `git clone <ctrl + v> git@github.com:dregiske/lab7.git <enter>` into the terminal.
+Keys pressed: In the browser I `<ctrl + c>` the ssh url, then clicked my VS code open and `git <space> clone <space> <ctrl + v> <enter>` into the terminal.
 
 Summary: By copying the ssh url and pasting it into the terminal with git clone it allowed me to clone my lab7 fork into VS code.
 
 Step 6:
+
 ![Screen Shot 2024-05-22 at 4 05 00 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/43d4d6af-a557-4452-85a0-44a00f6b0f0e)
 
 ![Screen Shot 2024-05-22 at 2 43 13 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/aedcccef-7684-4dfe-8101-3deed20c6ca4)
