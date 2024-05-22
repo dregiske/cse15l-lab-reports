@@ -6,7 +6,7 @@ Keys pressed: Opened a VS code terminal and typed, `ssh <space> agiske@ieng6.ucs
 
 Summary: The ssh command followed by my email address allowed me to login to my ieng6 account.
 
-Step 5:
+Step 5: Clone your fork of the repository from your Github account (using the `SSH` URL)
 
 ![Screen Shot 2024-05-22 at 2 38 52 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/a47961eb-23ca-4172-b7c1-9b3a6acd3141)
 
@@ -14,7 +14,7 @@ Keys pressed: In the browser I `<ctrl + c>` the ssh url, then clicked my VS code
 
 Summary: By copying the ssh url and pasting it into the terminal with git clone it allowed me to clone my lab7 fork into VS code.
 
-Step 6:
+Step 6: Run the tests, demonstrating that they fail
 
 ![Screen Shot 2024-05-22 at 4 05 00 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/43d4d6af-a557-4452-85a0-44a00f6b0f0e)
 
@@ -24,7 +24,7 @@ Keys pressed: First, `cd <space> lab7 <enter>`, then `bash <space> test.sh <ente
 
 Summary: To run the tests in lab7, I first had to change my current working directory to `lab7` by using the `cd` command. Then I used `bash test.sh` to run the bash script that compiled and ran `ListExamplesTests.java` in one command line.
 
-Step 7:
+Step 7: Edit the code file to fix the failing test
 
 ![Screen Shot 2024-05-22 at 3 01 39 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/e173ebdb-4f8b-4a4b-8d3e-966e982869a0)
 
@@ -32,7 +32,7 @@ Keys pressed: First `vim <space> ListExamples.java <enter>`. Scrolled down to th
 
 Summary: To fix the failing test, I had to edit `ListExamples.java` with the `vim` command. After entering the editing tool, I navigated to the mistake in the code. Then after placing my cursor above the mistake, I used the command `x` to delete the mistake and `i` to type in the correction. To finish I used the command `:wq` which saved changes and exited.
 
-Step 8:
+Step 8: Run the tests, demonstrating that they now succeed
 
 ![Screen Shot 2024-05-22 at 3 00 20 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/05c09d67-ab77-4cde-a929-cdfec7c33249)
 
@@ -40,7 +40,7 @@ Keys pressed: `bash <space> tesh.sh <enter>`.
 
 Summary: To show that the code was fixed and the tests all pass I used `bash test.sh` again to run and compile `ListExamplesTests.java` which showed that all tests had passed.
 
-Step 9:
+Step 9: Commit and push the resulting change to your Github account
 
 ![Screen Shot 2024-05-22 at 3 46 29 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/dfe4f118-22b5-4a3a-93c4-7d0ee242c298)
 
