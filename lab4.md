@@ -26,7 +26,7 @@ Step 7:
 
 ![Screen Shot 2024-05-22 at 3 01 39 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/e173ebdb-4f8b-4a4b-8d3e-966e982869a0)
 
-Keys pressed: First `vim ListExamples.java`. Scrolled down to the line that needed correction, then pressed `<left> <left> <left> <left> <left> <left> <left> <left> <left> <left> <left>` to place my cursor above the mistake, `<x>` to delete `1` and `<i> 2` to insert a `2` in the same place. `wq <enter>` to exit with saved changes.
+Keys pressed: First `vim ListExamples.java <enter>`. Scrolled down to the line that needed correction, then pressed `<left> <left> <left> <left> <left> <left> <left> <left> <left> <left> <left>` to place my cursor above the mistake, `<x>` to delete `1` and `<i> 2 <esc>` to insert a `2` in the same place. `wq <enter>` to exit with saved changes.
 
 Summary: To fix the mistake in the `ListExamples.java` I used the command `vim` and navigated to the mistake in the code. Then I used the command `x` to delete the mistake and `i` to type in the correction. After I used the command `:wq` to save changes and edit.
 
@@ -40,5 +40,8 @@ Summary: To show that the code was fixed and the tests all pass I used `bash tes
 
 Step 9:
 
+![Screen Shot 2024-05-22 at 3 46 29 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/dfe4f118-22b5-4a3a-93c4-7d0ee242c298)
+![Screen Shot 2024-05-22 at 3 47 43 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/0f240992-f185-4442-9320-4ef857e6f718)
+![Screen Shot 2024-05-22 at 3 48 17 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/99963677-3241-4b3d-8aed-98fa4c35ddc5)
 
-Keys pressed: `pwd <enter>`, `git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "lab report 4 done!"`
+Keys pressed: First `git <space> add <space> ListExamples.java <enter>`, then `git <space> commit <space> -m <space> "lab report 4 done" <enter>`, then `git <space> push <space> origin <space> main <enter>`.
