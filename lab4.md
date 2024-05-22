@@ -26,14 +26,19 @@ Step 7:
 
 ![Screen Shot 2024-05-22 at 3 01 39 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/e173ebdb-4f8b-4a4b-8d3e-966e982869a0)
 
-Keys pressed: Used `vim JavaExamples.java` to edit the java file. Scrolled down to the line that needed correction, then pressed `<left> <left> <left> <left> <left> <left> <left> <left> <left> <left> <left>` to place my cursor above the mistake, `<x>` to delete `1` and `<i> 2` to insert a `2` in the same place. `wq <enter>` to exit with saved changes.
+Keys pressed: First `vim ListExamples.java`. Scrolled down to the line that needed correction, then pressed `<left> <left> <left> <left> <left> <left> <left> <left> <left> <left> <left>` to place my cursor above the mistake, `<x>` to delete `1` and `<i> 2` to insert a `2` in the same place. `wq <enter>` to exit with saved changes.
 
-Summary: To fix the mistake in the `JavaExamples.java` I used the command `vim` and navigated to the mistake in the code. Then I used the command `x` to delete the mistake and `i` to type in the correction. After I used the command `:wq` to save changes and edit.
+Summary: To fix the mistake in the `ListExamples.java` I used the command `vim` and navigated to the mistake in the code. Then I used the command `x` to delete the mistake and `i` to type in the correction. After I used the command `:wq` to save changes and edit.
 
 Step 8:
 
 ![Screen Shot 2024-05-22 at 3 00 20 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/05c09d67-ab77-4cde-a929-cdfec7c33249)
 
-Keys pressed: `bash tesh.sh`.
+Keys pressed: `bash tesh.sh <enter>`.
 
-Summary: To show that the code was fixed and the tests all pass I used `bash test.sh` again to run and compile `JavaExamplesTests.java` which showed that all tests had passed.
+Summary: To show that the code was fixed and the tests all pass I used `bash test.sh` again to run and compile `ListExamplesTests.java` which showed that all tests had passed.
+
+Step 9:
+
+
+Keys pressed: `pwd <enter>`, `git <space> add <space> ListExamples.java <enter>`, `git <space> commit <space> -m <space> "lab report 4 done!"`
