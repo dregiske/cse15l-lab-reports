@@ -2,7 +2,8 @@ Part 1: Debugging Scenario
 
 Student: Hello TA, I am having issues with my program! For some reason my AutoGrader program called `grade.sh` has many errors. The symptom seems to be about `ClassNotFound` error message, can you help me? I've tried many different inputs but all of them seem to be failure-inducing inputs, nothing works!
 
-![Screen Shot 2024-06-05 at 1 09 06 AM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/7f585943-807d-4e7c-a45b-056125a75b0a)
+![Screen Shot 2024-06-05 at 1 31 12 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/7eb8150e-bb51-4adc-97a7-882b46f7aff9)
+
 
 TA: Hello student! Based on the error message, It seems your bug is about trying to find the lib file but is unable to find it, can you use the command `ls` in the terminal, while in the `list-examples-grader-main` working directory?
 
