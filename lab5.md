@@ -35,17 +35,29 @@ Directory after command:
 
 Student: Okay! All done, but now my AutoGrader seems to have another issue with wrong feedback. When grading different student-submissions, my program tells the student that their java file compiled with no issues when it wasn't able to compile, and tells vise versa when their java file has issues. The symptom of this issue is that my program is giving the wrong error code. The failure-inducing input is all inputs, because this happens with all student-submissions.
 
+(Wrong error feedback on the bottom, 3 lines above Time):
+
+![Screen Shot 2024-06-05 at 1 40 49 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/80051220-d5b8-4bad-946b-f7febd3e1bac)
+
 TA: I see, lets take a look at your `grade.sh`.
 
+Student:
 
+![Screen Shot 2024-06-05 at 1 43 08 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/3d539a7e-9332-48ee-ac02-ed74935cf836)
 
+TA: I see the issue, it seems you got confused about error codes. A java file only returns 0 when it successfully compiles, otherwise it will return a different number.
 
-At the end, all the information needed about the setup including:
-The file & directory structure needed
-The contents of each file before fixing the bug
-The full command line (or lines) you ran to trigger the bug
-A description of what to edit to fix the bug
-You should actually set up and run the scenario from your screenshots. It should involve at least a Java file and a bash script. Describing the bug should involve reading some output at the terminal resulting from running one or more commands. Design an error that produces more interesting output than a single message about a syntax or unbound identifier error – showcase some interesting wrong behavior! Feel free to set this up by cloning and breaking some existing code like the grading script or code from class, or by designing something of your own from scratch, etc.
+Student: So by using the error code, 1, I am telling the `if` statement to return an error in compiling when there is no error. I get it now.
+
+TA: To fix this, you will need to edit your `grade.sh` to be `if [[ $? -eq 0 ]]` instead. To edit the file, you can use `nano grade.sh` or manually open the file yourself.
+
+Student: I will fix it now.
+
+![Screen Shot 2024-06-05 at 1 49 30 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/1ebca796-9d56-49a6-a59e-d26cf5bc59c1)
+
+Executing `grade.sh` with changes:
+
+![Screen Shot 2024-06-05 at 1 50 40 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/43659dc1-8ec1-4a17-8354-b09497aabb00)
 
 Part 2: Reflection
 
