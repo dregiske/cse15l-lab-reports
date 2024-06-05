@@ -33,7 +33,11 @@ Directory after command:
 
 ![Screen Shot 2024-06-05 at 1 21 33 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/00ce7205-e471-4cfb-b7bf-0be19cd2835e)
 
-Student: Okay! All done, now my AutoGrader is working properly, thank you TA!
+Student: Okay! All done, but now my AutoGrader seems to have another issue with wrong feedback. When grading different student-submissions, my program tells the student that their java file compiled with no issues when it wasn't able to compile, and tells vise versa when their java file has issues. The symptom of this issue is that my program is giving the wrong error code. The failure-inducing input is all inputs, because this happens with all student-submissions.
+
+TA: I see, lets take a look at your `grade.sh`.
+
+
 
 
 At the end, all the information needed about the setup including:
