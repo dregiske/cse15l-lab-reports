@@ -4,8 +4,7 @@ Student: Hello TA, I am having issues with my program! For some reason my AutoGr
 
 ![Screen Shot 2024-06-05 at 1 31 12 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/7eb8150e-bb51-4adc-97a7-882b46f7aff9)
 
-
-TA: Hello student! Based on the error message, It seems your bug is about trying to find the lib file but is unable to find it, can you use the command `ls` in the terminal, while in the `list-examples-grader-main` working directory?
+TA: Hello student! Based on the error message, It seems your bug is about trying to find the `lib` file but is unable to find it, can you use the command `ls` in the terminal, while in the `list-examples-grader-main` working directory?
 
 Student: Sure!
 
@@ -18,9 +17,9 @@ Student: I used `ls` on the directories, `student-submission` and `faulty-file`,
 ![Screen Shot 2024-06-05 at 1 22 38 AM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/711bf87e-46ba-4360-8623-9d11389c0a2d)
 
 TA: Now we have to move the `lib` file out of `faulty-file` and into `list-examples-grader-main` so your AutoGrader can use the `lib` file to work properly. To do this we will need to use the `mv` command, which goes like: 
-`mv [options] <fdirectorypath> <destination>`.
+`mv [options] <directorypath> <destination>`.
 
-Student: Okay, so to move the file, `lib` from `faulty-file` to `list-examples-grader-main`, I will need to use the command, `mv ~/Desktop/CSE15L/list-examples-grader-main/faulty-file/lib ~/Desktop/CSE15L/list-examples-grader-main/lib`.
+Student: Okay, so to move the file from `faulty-file` to `list-examples-grader-main`, I will need to use the command, `mv ~/Desktop/CSE15L/list-examples-grader-main/faulty-file/lib ~/Desktop/CSE15L/list-examples-grader-main/lib`.
 
 Directory before command:
 
@@ -34,7 +33,7 @@ Directory after command:
 
 ![Screen Shot 2024-06-05 at 1 21 33 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/00ce7205-e471-4cfb-b7bf-0be19cd2835e)
 
-Student: Okay! All done, but now my AutoGrader seems to have another issue with wrong feedback. When grading different student-submissions, my program tells the student that their java file compiled with no issues when it wasn't able to compile, and vise versa when their java file has issues. The symptom of this issue is that my program is giving the wrong error code. The failure-inducing input is all inputs, because this happens with all student-submissions.
+Student: Okay! All done, but now my AutoGrader seems to have another issue with wrong feedback. When grading different `student-submissions` my program tells the student that their java file compiled with no issues when it wasn't able to compile, and vise versa when their java file has issues. The symptom of this issue is that my program is giving the wrong error code. The failure-inducing input is all inputs, because this happens with all `student-submissions`.
 
 (Wrong error feedback on the bottom, 3 lines above Time):
 
