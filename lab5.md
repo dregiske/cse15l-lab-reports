@@ -17,7 +17,8 @@ Student: I used `ls` on the directories, `student-submission` and `faulty-file`,
 
 ![Screen Shot 2024-06-05 at 1 22 38 AM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/711bf87e-46ba-4360-8623-9d11389c0a2d)
 
-TA: Now we have to move the `lib` file out of `faulty-file` and into `list-examples-grader-main` so your AutoGrader can use the `lib` file to work properly. To do this we will need to use the `mv` command, which goes like: `mv [options] <fdirectorypath> <destination>`. To move multiple files, you would have to write it like, `mv [options] <directorypath> <otherdirectorypath> <destination>`.
+TA: Now we have to move the `lib` file out of `faulty-file` and into `list-examples-grader-main` so your AutoGrader can use the `lib` file to work properly. To do this we will need to use the `mv` command, which goes like: 
+`mv [options] <fdirectorypath> <destination>`.
 
 Student: Okay, so to move the file, `lib` from `faulty-file` to `list-examples-grader-main`, I will need to use the command, `mv ~/Desktop/CSE15L/list-examples-grader-main/faulty-file/lib ~/Desktop/CSE15L/list-examples-grader-main/lib`.
 
@@ -33,7 +34,7 @@ Directory after command:
 
 ![Screen Shot 2024-06-05 at 1 21 33 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/00ce7205-e471-4cfb-b7bf-0be19cd2835e)
 
-Student: Okay! All done, but now my AutoGrader seems to have another issue with wrong feedback. When grading different student-submissions, my program tells the student that their java file compiled with no issues when it wasn't able to compile, and tells vise versa when their java file has issues. The symptom of this issue is that my program is giving the wrong error code. The failure-inducing input is all inputs, because this happens with all student-submissions.
+Student: Okay! All done, but now my AutoGrader seems to have another issue with wrong feedback. When grading different student-submissions, my program tells the student that their java file compiled with no issues when it wasn't able to compile, and vise versa when their java file has issues. The symptom of this issue is that my program is giving the wrong error code. The failure-inducing input is all inputs, because this happens with all student-submissions.
 
 (Wrong error feedback on the bottom, 3 lines above Time):
 
@@ -45,7 +46,7 @@ Student:
 
 ![Screen Shot 2024-06-05 at 1 43 08 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/3d539a7e-9332-48ee-ac02-ed74935cf836)
 
-TA: I see the issue, it seems you got confused about error codes. A java file only returns 0 when it successfully compiles, otherwise it will return a different number.
+TA: I see the issue, the bug is that it returns the wrong error code. A java file only returns 0 when it successfully compiles, otherwise it will return a different number.
 
 Student: So by using the error code, 1, I am telling the `if` statement to return an error in compiling when there is no error. I get it now.
 
@@ -58,6 +59,8 @@ Student: I will fix it now.
 Executing `grade.sh` with changes:
 
 ![Screen Shot 2024-06-05 at 1 50 40 PM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/43659dc1-8ec1-4a17-8354-b09497aabb00)
+
+Student: My `grade.sh` AutoGrader seems to be working properly now! Thank you TA.
 
 Part 2: Reflection
 
