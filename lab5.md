@@ -1,20 +1,24 @@
-Design a debugging scenario, and write your report as a conversation on Piazza (you don't need to make a post). It should have:
+Part 1: Debugging Scenario
 
-The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is. (Don't actually make the post! Just write the content that would go in such a post).
-
-Student: Hello TA, I am having issues with my java code! For some reason my AutoGrader program called `grade.sh` has many errors. The symptom seems to be about `ClassNotFound` error message, can you help me? I've tried many different inputs but all of them seem to be failure-inducing inputs.
+Student: Hello TA, I am having issues with my program! For some reason my AutoGrader program called `grade.sh` has many errors. The symptom seems to be about `ClassNotFound` error message, can you help me? I've tried many different inputs but all of them seem to be failure-inducing inputs, nothing works!
 
 ![Screen Shot 2024-06-05 at 1 09 06 AM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/7f585943-807d-4e7c-a45b-056125a75b0a)
 
+TA: Hello student! Based on the error message, It seems your bug is about trying to find the lib file but is unable to find it, can you use the command `ls` in the terminal, while in the `list-examples-grader-main` working directory?
 
-A response from a TA asking a leading question or suggesting a command to try (To be clear, you are mimicking a TA here.)
-Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
-
-TA: Hello student! Based on the error message, It seems your program is trying to find the lib file but is unable to find it, can you use ls in the terminal in the `list-examples-grader-main` working directory?
-
-Student:
+Student: Sure!
 
 ![Screen Shot 2024-06-05 at 1 15 29 AM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/04691416-7830-453e-a330-9f70137280ba)
+
+TA: I think I see the issue here, there is no `lib` file in `list-examples-grader-main`, perhaps it is inside another file? Check all the directories in `list-examples-grader-main` to see if it is in there.
+
+Student: I used `ls` on the directories, `student-submission` and `faulty-file`, and sure enough it was in `faulty-file`. But what do I do now?
+
+![Screen Shot 2024-06-05 at 1 22 38 AM](https://github.com/dregiske/cse15l-lab-reports/assets/146780188/711bf87e-46ba-4360-8623-9d11389c0a2d)
+
+TA: Now we have to move the `lib` file out of `faulty-file` and into `list-examples-grader-main` so your AutoGrader can use the `lib` file to work properly.
+
+Student: Okay! All done, now my AutoGrader is working properly, thank you TA!
 
 
 At the end, all the information needed about the setup including:
